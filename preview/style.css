@@ -3,3 +3,23 @@
 
 /* VELORYA light porcelain palette */
 :root{color:#24262d;background:#fafaf8}body{background:#fafaf8}header{background:#fafaf8e8;border-bottom-color:#e7e8ed}.hero{background:radial-gradient(ellipse at 85% 88%,#dcd5f5 0%,transparent 47%),radial-gradient(ellipse at 10% 0%,#e5e9f5,transparent 58%),linear-gradient(135deg,#f8f9fc,#eef1f8);color:#24262d;border:1px solid #e7e9f0;box-shadow:0 14px 45px #4050700c}.hero:after{background:#b5a5eb;opacity:.2}.hero h1 em{color:#4a5c90}.hero p{color:#626979}.eyebrow{color:#6b70a0}.cta{background:#4778d8;color:white;box-shadow:0 8px 22px #4778d822}.product{background:#f0f2f5;border-color:#e9ebf0}.art{background:radial-gradient(circle at 50% 85%,#dcd5f5,#f0f2f5 70%)}.product:nth-child(2n) .art{background:radial-gradient(circle at 50% 85%,#dce8f9,#f0f2f5 70%)}.buy,.checkout{background:#4778d8}.buy:hover,.checkout:hover{background:#3262bf}.search,.panel{background:#f0f2f5}.nav{background:#fafaf8f0}.nav button.active{color:#4778d8}.hero-mark{box-shadow:0 12px 32px #7e8bb522}
+
+/* VELORYA cinematic light experience */
+body{background:linear-gradient(180deg,#fff 0%,#fafaff 52%,#f6f8ff 100%)}
+.hero{min-height:580px;isolation:isolate;background:radial-gradient(ellipse 65% 65% at 82% 85%,#c6b9ffb0 0%,transparent 72%),radial-gradient(ellipse 70% 70% at 12% 8%,#dceeff 0%,transparent 75%),linear-gradient(140deg,#fff,#f7f7ff);box-shadow:0 28px 90px #8184b122;border:1px solid #fff;position:relative}
+.hero:before{content:"";position:absolute;inset:9% 15%;border-radius:50%;background:conic-gradient(from 180deg,#c2caff55,#e6ddff88,#c7e8ff77,#c2caff55);filter:blur(55px);animation:aurora 14s ease-in-out infinite alternate;z-index:-1}
+.hero:after{content:"";width:58%;height:140px;bottom:-96px;left:21%;background:#b3a3ff;opacity:.28;filter:blur(58px)}
+.hero-mark{width:118px;height:118px;border-radius:27px;box-shadow:0 20px 55px #7776b744;animation:floatMark 6s ease-in-out infinite}
+.hero h1{font-size:clamp(44px,8.5vw,92px);letter-spacing:-.065em;line-height:1.04;max-width:900px;animation:riseIn .9s ease both}
+.hero h1 em{background:linear-gradient(105deg,#4d5e91,#8978cf,#508cbb);background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero p{font-size:clamp(15px,2.2vw,19px);max-width:590px}
+.hero .cta{padding:16px 29px;font-size:15px;background:#242733;color:#fff;transition:transform .2s,box-shadow .2s}
+.hero .cta:hover{transform:translateY(-3px);box-shadow:0 14px 35px #2225}
+.product{background:#fff;border:1px solid #edf0f6;box-shadow:0 14px 45px #3540660c;transition:transform .3s,box-shadow .3s}
+.product:hover{transform:translateY(-7px);box-shadow:0 22px 60px #3540661b}
+.art{height:180px;background:radial-gradient(circle at 50% 70%,#dcd7fb,#f7f8fc 68%);font-size:68px}
+.product:nth-child(2n) .art{background:radial-gradient(circle at 50% 70%,#d5eaff,#f7f8fc 68%)}
+.section h2{font-size:clamp(29px,4.5vw,43px);letter-spacing:-.055em}
+@keyframes floatMark{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes aurora{from{transform:translate(-4%,-3%) scale(.9)}to{transform:translate(5%,4%) scale(1.12)}}@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.hero{min-height:565px;padding:48px 24px}.hero-mark{width:100px;height:100px}.hero h1{font-size:clamp(40px,10vw,59px)}.art{height:150px}}
+@media(prefers-reduced-motion:reduce){.hero:before,.hero-mark,.hero h1{animation:none}html{scroll-behavior:auto}}
