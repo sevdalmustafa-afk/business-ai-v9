@@ -32,3 +32,11 @@ body{background:linear-gradient(180deg,#fff 0%,#fafaff 52%,#f6f8ff 100%)}
 
 /* Clean discovery layout */
 .hero{min-height:470px}.hero h1{max-width:760px}.hero p{max-width:470px}.section{margin-top:40px}.catalog-tools{margin:0 0 22px}.search{display:block;margin-bottom:13px;background:#fff;border:1px solid #e2e6ee;box-shadow:0 5px 20px #33446608}.filters{display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 0 8px}.filters::-webkit-scrollbar{display:none}.filter{flex:0 0 auto;border:1px solid #e2e5ee;border-radius:100px;background:#fff;color:#555e70;padding:10px 15px;font-size:12px;font-weight:650}.filter.selected{background:#24283c;color:#fff;border-color:#24283c}.product .inside{display:flex;flex-direction:column;min-height:190px}.product .price{margin-top:auto}.product .buy{margin-top:8px}.grid{align-items:stretch}#catalog{scroll-margin-top:95px}@media(max-width:600px){.hero{min-height:425px;padding:40px 22px}.hero h1{font-size:clamp(37px,9vw,53px)}.hero-mark{width:77px;height:77px}.section h2{font-size:28px}.product .inside{min-height:187px}}
+
+/* iPhone navigation legibility hotfix: override legacy .nav span selector */
+.nav{box-sizing:border-box;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;overflow:visible}
+.nav button{width:100%;min-width:0;max-width:100%;padding:10px 1px 9px;overflow:hidden;white-space:nowrap;justify-content:center;align-items:center}
+.nav .nav-label,.nav button .nav-label{display:block;width:100%;font-size:clamp(9px,2.5vw,12px)!important;line-height:1.25;font-weight:650;text-align:center;letter-spacing:-.025em;white-space:nowrap;overflow:hidden;text-overflow:clip}
+.nav .nav-icon,.nav button .nav-icon{display:flex;align-items:center;justify-content:center;width:25px;height:25px;font-size:inherit!important;flex-shrink:0}
+.nav .nav-icon svg{width:22px;height:22px;flex-shrink:0}
+@media(max-width:380px){.nav{left:10px;right:10px;padding:6px;gap:1px}.nav .nav-label{font-size:9px!important}}
